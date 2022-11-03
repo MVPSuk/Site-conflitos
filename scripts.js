@@ -70,8 +70,9 @@ function fecharNav(){
 
 function abrirNav2(){
     var main = document.getElementById('main');
-    document.getElementById('nav2').style.width = '250px';
-    main.style.marginRight = '250px';
+    document.getElementById('nav2').style.width = '350px';
+    main.style.marginLeft = '200px';
+    main.style.marginRight = '350px';
 }
 
 //abrir lista de continentes
