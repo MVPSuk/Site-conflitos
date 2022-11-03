@@ -1,0 +1,151 @@
+:root{
+    --cor-1: rgb(24, 41, 114);
+    --cor-2: rgb(21, 37, 105);
+    --cor-3: rgb(19, 32, 92);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #ffffff;
+    height: 100%;
+}
+
+header{
+    padding: 11px 11px 11px 30px;
+    top: 0;
+}
+
+nav{
+    background: var(--cor-2);
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+}
+
+main{
+    height: 100%;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+
+footer{
+    bottom: 0;
+}
+
+header,footer{
+    background: var(--cor-1);
+    width: 100%;
+    position: fixed;
+    transition: height 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    border-color: rgba(166, 197, 255, 0.479);
+}
+
+#btn-abrir{
+    color: white;
+    font-size: 24px;
+}
+
+/*#title{
+    color: white;
+    width: 90%;
+    margin: 0 0 0 20px;
+    position: fixed;
+    top: 11px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}*/
+
+
+/* .language a img{
+    height: 20px;
+    margin: 5px 2px;
+    float: right;
+} */
+
+nav a{
+    color: white;
+    font-size: 22px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+
+#redcircle{
+    width: 30px;
+    height: 30px; 
+    padding: 3px 0 0 8px;
+    border-radius: 50%;
+}
+
+#redcircle:hover{
+    background-color: rgb(255, 112, 129,0.6);
+    transition: 0.2s;
+}
+
+nav ul li a i{
+    transition: 0.1s;
+}
+
+nav ul li ul{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+nav ul li ul li a{
+    background: var(--cor-3);
+    font-size: 16px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background: rgb(34, 53, 136);
+    transition: 0.3s;
+}
+
+nav ul li ul li a:hover{
+    background: rgb(32, 48, 123);
+}
+
+nav p{
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+}
+
+#backscreen{
+    width: 0;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+@media screen and (min-width:481px) {
+    
+}
