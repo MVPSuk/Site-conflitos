@@ -2,6 +2,7 @@
     --cor-1: rgb(24, 41, 114);
     --cor-2: rgb(21, 37, 105);
     --cor-3: rgb(19, 32, 92);
+    --cor-4: rgb(35, 53, 133);
 }
 
 *{
@@ -28,6 +29,19 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 3;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+}
+
+#nav2{
+    background: var(--cor-4);
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 3;
     overflow: hidden;
     white-space: nowrap;
@@ -67,7 +81,7 @@ hr{
 
 /*#title{
     color: white;
-    width: 90%;
+    width: 90vw;
     margin: 0 0 0 20px;
     position: fixed;
     top: 11px;
@@ -151,6 +165,10 @@ nav p{
     height: 100%;
     z-index: 2;
     position: absolute;
+}
+
+map area{
+  cursor: pointer;
 }
 
 #mainnomap{

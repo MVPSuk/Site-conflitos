@@ -30,13 +30,15 @@ window.onload = function () {
 }
 
 //exibir nome do continente (não sendo usado)
-function identificarArea(nomeArea){
-    document.getElementById('areaDestaque')
-    .innerHTML = nomeArea;
-}
+//function identificarArea(nomeArea){
+//    document.getElementById('areaDestaque')
+//    .innerHTML = nomeArea;
+//}
 
 //destacar continente
-function destacarArea()
+function destacarArea(id,caminho){
+    document.getElementById(id).src = caminho;
+}
 
 //abrir barra lateral
 function abrirNav(){
@@ -55,13 +57,21 @@ function abrirNav(){
 function fecharNav(){
     var main = document.getElementById('main');
     document.getElementById('nav').style.width = '0';
+    document.getElementById('nav2').style.width = '0';
     main.style.marginLeft = '0';
+    main.style.marginRight = '0';
     document.getElementById('header').style.height = '50px';
     document.getElementById('footer').style.height = '0';
     main.style.paddingTop = '50px';
     main.style.paddingBottom = '0';
     document.getElementById('backscreen').style.width = '0';
     document.getElementById('mainnomap').style.display = 'inline';
+}
+
+function abrirNav2(){
+    var main = document.getElementById('main');
+    document.getElementById('nav2').style.width = '250px';
+    main.style.marginRight = '250px';
 }
 
 //abrir lista de continentes
@@ -76,3 +86,4 @@ function abrirCList(){
         seta.style.transform = 'rotate(0deg)'
     }
 }
+
