@@ -73,8 +73,16 @@ function abrirNav2(continente) {
     links = continente.getAttribute('data-lists-links').split(',');
     all = '';
     for (i = 0; i < lista.length; i++) {
-        all += '<li><a href="' + links[i] + '">' + lista[i] + '</a></li>';
+        all += '<li><a target="_blank" href="' + links[i] + '">' + lista[i] + '</a></li>';
     }
+
+    var combined = [];
+
+    for (var i = 0; i < lista.length; i++) {
+        combined[i] = { name: lista[i], link: links[i] };
+    }
+
+    console.log(combined);
 
     document.getElementById('title').innerHTML = "Conflitos<br><b>" + continente.getAttribute('continente') + "</b>";
     document.getElementById('nav2-1').innerHTML = '<ul>' + all + '</ul>';
