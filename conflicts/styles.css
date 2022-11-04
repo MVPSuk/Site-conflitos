@@ -12,7 +12,7 @@
 }
 
 html,body{
-    background-color: #ffffff;
+    background-color: #a2c7ff;
     height: 100%;
 }
 
@@ -36,12 +36,20 @@ nav{
 
 main{
     height: 100%;
+    padding: 0 40px;
     padding-top: 50px;
+    text-align: center;
     transition: 0.5s;
 }
 
 footer{
     bottom: 0;
+    color: white;
+    padding: 11px 11px 11px 30px;
+}
+footer p{
+    
+    text-align: center;
 }
 
 header,footer{
@@ -49,6 +57,10 @@ header,footer{
     width: 100%;
     position: fixed;
     transition: height 0.3s;
+}
+
+p{
+    text-align: justify;
 }
 
 a{
@@ -62,6 +74,10 @@ hr{
 #btn-abrir{
     color: white;
     font-size: 24px;
+}
+
+h1{
+    margin: 1em 0;
 }
 
 /*#title{
@@ -109,8 +125,8 @@ nav ul li a i{
     transition: 0.1s;
 }
 
-nav ul li ul{
-    height: 0px;
+nav ul li #conflictlist{
+    height: 0;
     overflow: hidden;
     transition: height 0.3s;
 }
@@ -144,6 +160,16 @@ nav p{
     height: 100%;
     z-index: 2;
     position: absolute;
+}
+
+#mainnomap{
+    color: rgb(35, 35, 35);
+    padding: 50px 30px;
+}
+
+#mapaimg{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media screen and (min-width:481px) {

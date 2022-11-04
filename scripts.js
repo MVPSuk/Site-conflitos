@@ -24,27 +24,22 @@ window.onload = function () {
         };
         window.onresize = this.resize;
     },
-    imageMap = new ImageMap(document.getElementById('mapa'), document.getElementById('mapaimg'));
+        imageMap = new ImageMap(document.getElementById('mapa'), document.getElementById('mapaimg'));
     imageMap.resize();
     return;
 }
 
-//exibir nome do continente (não sendo usado)
-//function identificarArea(nomeArea){
-//    document.getElementById('areaDestaque')
-//    .innerHTML = nomeArea;
-//}
-
 //destacar continente
-function destacarArea(id,caminho){
-    document.getElementById(id).src = caminho;
+function destacarArea(caminho) {
+    document.getElementById('mapaimg').src = caminho;
 }
 
-//abrir barra lateral
-function abrirNav(){
+//abrir barra lateral esquerda
+function abrirNav() {
     var main = document.getElementById('main');
-    document.getElementById('nav').style.width = '250px';
-    main.style.marginLeft = '250px';
+
+    document.getElementById('nav').style.width = '18vw';
+    main.style.paddingLeft = '18vw';
     document.getElementById('header').style.height = '13vh';
     document.getElementById('footer').style.height = '13vh';
     main.style.paddingTop = '13vh';
@@ -53,38 +48,53 @@ function abrirNav(){
     document.getElementById('mainnomap').style.display = "none";
 }
 
-//fechar barra lateral
-function fecharNav(){
+//fechar barras laterais
+function fecharNav() {
     var main = document.getElementById('main');
+
     document.getElementById('nav').style.width = '0';
     document.getElementById('nav2').style.width = '0';
-    main.style.marginLeft = '0';
-    main.style.marginRight = '0';
+    main.style.paddingLeft = '0';
+    main.style.paddingRight = '0';
     document.getElementById('header').style.height = '50px';
     document.getElementById('footer').style.height = '0';
     main.style.paddingTop = '50px';
     main.style.paddingBottom = '0';
     document.getElementById('backscreen').style.width = '0';
-    document.getElementById('mainnomap').style.display = 'inline';
+    document.getElementById('mainnomap').style.display = 'block';
 }
 
-function abrirNav2(){
+//abrir barra lateral esquerda, direita e lista de continentes
+function abrirNav2(continente) {
+    abrirNav();
+
     var main = document.getElementById('main');
-    document.getElementById('nav2').style.width = '350px';
-    main.style.marginLeft = '200px';
-    main.style.marginRight = '350px';
+    lista = continente.getAttribute('data-lists-names').split(',');
+    links = continente.getAttribute('data-lists-links').split(',');
+    all = '';
+    for (i = 0; i < lista.length; i++) {
+        all += '<li><a href="' + links[i] + '">' + lista[i] + '</a></li>';
+    }
+
+    document.getElementById('title').innerHTML = "Conflitos<br><b>" + continente.getAttribute('continente') + "</b>";
+    document.getElementById('nav2-1').innerHTML = '<ul>' + all + '</ul>';
+    document.getElementById('nav2').style.width = '18vw';
+    document.getElementById('conflictlist').style.height = '170px';
+    document.getElementById('pointconflictlist').style.transform = 'rotate(90deg)';
+    main.style.paddingRight = '18vw';
 }
 
 //abrir lista de continentes
-function abrirCList(){
+function abrirCList() {
     var cLOpen = document.getElementById('conflictlist');
-    var seta = document.getElementById('point1');
-    if(cLOpen.style.height != '170px'){
+    var seta = document.getElementById('pointconflictlist');
+
+    if (cLOpen.style.height != '170px') {
         cLOpen.style.height = '170px';
-        seta.style.transform = 'rotate(90deg)'
-    }else if(cLOpen.style.height != '0px'){
+        seta.style.transform = 'rotate(90deg)';
+    } else if (cLOpen.style.height != '0px') {
         cLOpen.style.height = '0px';
-        seta.style.transform = 'rotate(0deg)'
+        seta.style.transform = 'rotate(0deg)';
     }
 }
 

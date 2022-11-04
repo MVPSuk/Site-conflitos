@@ -52,7 +52,7 @@ main{
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 footer{
@@ -68,10 +68,6 @@ header,footer{
 
 a{
     text-decoration: none;
-}
-
-hr{
-    border-color: rgba(166, 197, 255, 0.479);
 }
 
 #btn-abrir{
@@ -93,7 +89,6 @@ hr{
     -ms-user-select: none;
     user-select: none;
 }*/
-
 
 /* .language a img{
     height: 20px;
@@ -123,7 +118,7 @@ nav a{
 #btn-fechar{
     display: inline-block;
     margin: 12px 10px 12px 32px;
-    padding: 0;!important
+    padding: 0 !important;
 }
 
 nav ul li a i{
@@ -160,6 +155,26 @@ nav p{
     right: 20px;
 }
 
+#nav2{
+    color: white;
+}
+
+#nav2 #title{
+    color: white;
+    font-size: 22px;
+    margin-top: 54px;
+    padding: 12px 10px 12px 10px;
+}
+
+#nav2 a{
+    color: white;
+    background: var(--cor-2);
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+}
+
 #backscreen{
     width: 0;
     height: 100%;
@@ -174,6 +189,7 @@ map area{
 #mainnomap{
     color: rgb(35, 35, 35);
     padding: 50px 30px;
+    display: block;
 }
 
 #mapaimg{
