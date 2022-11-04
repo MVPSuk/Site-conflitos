@@ -175,6 +175,11 @@ nav p{
     text-align: center;
 }
 
+#nav2 a:hover{
+    background: rgb(50, 71, 164);
+    transition: 0.3s;
+}
+
 #backscreen{
     width: 0;
     height: 100%;

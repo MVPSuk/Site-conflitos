@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/b397ee59be.js" crossorigin="anonymous"></script>
-    <script src="../scripts.js"></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -28,41 +28,29 @@
         </div> -->
     </header>
 
-    <nav id="nav">
-        <a href="#" id="btn-fechar" onclick="fecharNav()">
-            <div id="redcircle"><i class="fa-solid fa-xmark"></i></div>
-        </a>
-        <!-- <a href="#">Página Inicial</a>
-        <details>
-            <summary>Conflitos</summary>
-            <a href="index.php">Oriente Médio</a>
-            <a href="#">Ásia</a>
-            <a href="#">Europa</a>
-            <a href="#">América</a>
-            <a href="#">África</a>
-        </details>
-        <a href="#">Sobre</a> -->
+        <nav id="nav">
+	    <a href="#" id="btn-fechar" onclick="fecharNav()"><div id="redcircle"><i class="fa-solid fa-xmark"></i></div></a>
         <ul>
             <li>
-                <a href="../../index.php">Página Inicial</a>
+                <a href="index.html">Página Inicial</a>
             </li>
             <li>
-                <a href="#" onclick="abrirCList()"><i id="point1" class="fa-solid fa-angle-right"></i> Conflitos</a>
+                <a href="#" onclick="abrirCList()"><i id="pointconflictlist" class="fa-solid fa-angle-right"></i> Continentes</a>
                 <ul id="conflictlist">
                     <li>
-                        <a href="#">Oriente Médio</a>
+                        <a href="#" onclick="abrirNav2(this)" continente="Oriente Médio" data-lists-names="Primavera Árabe,Palestina e Israel,Afeganistão,Estado Islâmico" data-lists-links="" onmouseover="destacarArea('imgs/mapamundiOM.png');">Oriente Médio</a>
                     </li>
                     <li>
-                        <a href="#">Ásia</a>
+                        <a href="#" onclick="abrirNav2(this)" continente="Ásia" data-lists-names="China e Taiwan,Coreia do Norte,China e Hong Kong" data-lists-links="conflicts/chinaetaiwan.html,conflicts/coreiadonorte.html,conflicts/chinaehongkong.html" onmouseover="destacarArea('imgs/mapamundiAS.png');">Ásia</a>
                     </li>
                     <li>
-                        <a href="#">Europa</a>
+                        <a href="#" onclick="abrirNav2(this)" continente="Europa" data-lists-names="ETA" data-lists-links="conflicts/eta.html" onmouseover="destacarArea('imgs/mapamundiEU.png');">Europa</a>
                     </li>
                     <li>
-                        <a href="#">América</a>
+                        <a href="#" onclick="abrirNav2(this)" continente="América" data-lists-names="Fronteira EUA x mex,Haiti,Cuba,Venezuela,FARC/Colômbia,Milícias cariocas" data-lists-links="" onmouseover="destacarArea('imgs/mapamundiAM.png');">América</a>
                     </li>
                     <li>
-                        <a href="#">África</a>
+                        <a href="#" onclick="abrirNav2(this)" continente="África" data-lists-names="Guerra Civil da Serra Leoa,Chade" data-lists-links="" onmouseover="destacarArea('imgs/mapamundiAF.png');">África</a>
                     </li>
                 </ul>
             </li>
@@ -74,6 +62,11 @@
     </nav>
 
     <main id="main">
+        <div id="nav2">
+            <p id="title"></p>
+            <div id="nav2-1"></div>
+        </div>
+        
         <h1>Conflito 1</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsa fugiat culpa adipisci doloribus vitae provident recusandae consequatur voluptatem magnam fugit, soluta in neque eos, sint deserunt amet iste quaerat!</p>
     </main>

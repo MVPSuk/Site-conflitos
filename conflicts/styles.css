@@ -12,7 +12,7 @@
 }
 
 html,body{
-    background-color: #a2c7ff;
+    background-color: #ffffff;
     height: 100%;
 }
 
@@ -47,8 +47,8 @@ footer{
     color: white;
     padding: 11px 11px 11px 30px;
 }
-footer p{
-    
+
+footer p{    
     text-align: center;
 }
 
@@ -79,22 +79,6 @@ hr{
 h1{
     margin: 1em 0;
 }
-
-/*#title{
-    color: white;
-    width: 90%;
-    margin: 0 0 0 20px;
-    position: fixed;
-    top: 11px;
-    text-align: center;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}*/
-
 
 /* .language a img{
     height: 20px;
