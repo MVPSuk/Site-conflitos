@@ -45,7 +45,7 @@ function abrirNav() {
     main.style.paddingTop = '13vh';
     main.style.paddingBottom = '13vh';
     document.getElementById('backscreen').style.width = '100%';
-    document.getElementById('mainnomap').style.display = "none";
+    //document.getElementById('mainnomap').style.display = "none";
 }
 
 //fechar barras laterais
@@ -61,7 +61,7 @@ function fecharNav() {
     main.style.paddingTop = '50px';
     main.style.paddingBottom = '0';
     document.getElementById('backscreen').style.width = '0';
-    document.getElementById('mainnomap').style.display = 'block';
+    //document.getElementById('mainnomap').style.display = 'block';
 }
 
 //abrir barra lateral esquerda, direita e lista de continentes

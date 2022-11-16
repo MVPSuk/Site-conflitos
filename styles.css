@@ -18,41 +18,26 @@ html,body{
 }
 
 header{
-    padding: 11px 11px 11px 30px;
+    padding: 11px 30px 11px 30px;
     top: 0;
 }
 
 nav{
     background: var(--cor-2);
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    top: 0;
     left: 0;
-    z-index: 3;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: width 0.3s;
 }
 
 #nav2{
     background: var(--cor-4);
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    top: 0;
     right: 0;
-    z-index: 3;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: width 0.3s;
+    text-align: center;
 }
 
 main{
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 footer{
@@ -66,6 +51,18 @@ header,footer{
     transition: height 0.3s;
 }
 
+nav,#nav2{
+    color: white;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+}
+
 a{
     text-decoration: none;
 }
@@ -74,27 +71,6 @@ a{
     color: white;
     font-size: 24px;
 }
-
-/*#title{
-    color: white;
-    width: 90vw;
-    margin: 0 0 0 20px;
-    position: fixed;
-    top: 11px;
-    text-align: center;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}*/
-
-/* .language a img{
-    height: 20px;
-    margin: 5px 2px;
-    float: right;
-} */
 
 nav a{
     color: white;
@@ -150,17 +126,13 @@ nav ul li ul li a:hover{
 nav p{
     color: white;
     margin: 0;
+    font-size: 12px;
     position: absolute;
     bottom: 16px;
     right: 20px;
 }
 
-#nav2{
-    color: white;
-}
-
-#nav2 #title{
-    color: white;
+#title{
     font-size: 22px;
     margin-top: 54px;
     padding: 12px 10px 12px 10px;
@@ -189,12 +161,6 @@ nav p{
 
 map area{
   cursor: pointer;
-}
-
-#mainnomap{
-    color: rgb(35, 35, 35);
-    padding: 50px 30px;
-    display: block;
 }
 
 #mapaimg{

@@ -2,6 +2,7 @@
     --cor-1: rgb(24, 41, 114);
     --cor-2: rgb(21, 37, 105);
     --cor-3: rgb(19, 32, 92);
+    --cor-4: rgb(35, 53, 133);
 }
 
 *{
@@ -12,63 +13,57 @@
 }
 
 html,body{
-    background-color: #ffffff;
+    background-color: white;
     height: 100%;
 }
 
 header{
-    padding: 11px 11px 11px 30px;
     top: 0;
 }
 
 nav{
     background: var(--cor-2);
+    left: 0;
+}
+
+#nav2{
+    background: var(--cor-4);
+    right: 0;
+    text-align: center;
+}
+
+main{
+    height: 100%;
+    padding: 50px 40px 0 40px;
+    text-align: center;
+}
+
+footer{
+    bottom: 0;
+}
+
+header,footer{
+    color: white;
+    background: var(--cor-1);
+    width: 100%;
+    padding: 11px 30px 11px 30px;
+    position: fixed;
+}
+
+nav,#nav2{
+    color: white;
     height: 100%;
     width: 0px;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 3;
     overflow: hidden;
     white-space: nowrap;
     transition: width 0.3s;
 }
 
-main{
-    height: 100%;
-    padding: 0 40px;
-    padding-top: 50px;
-    text-align: center;
-    transition: 0.5s;
-}
-
-footer{
-    bottom: 0;
-    color: white;
-    padding: 11px 11px 11px 30px;
-}
-
-footer p{    
-    text-align: center;
-}
-
-header,footer{
-    background: var(--cor-1);
-    width: 100%;
-    position: fixed;
-    transition: height 0.3s;
-}
-
-p{
-    text-align: justify;
-}
-
 a{
     text-decoration: none;
-}
-
-hr{
-    border-color: rgba(166, 197, 255, 0.479);
 }
 
 #btn-abrir{
@@ -79,12 +74,6 @@ hr{
 h1{
     margin: 1em 0;
 }
-
-/* .language a img{
-    height: 20px;
-    margin: 5px 2px;
-    float: right;
-} */
 
 nav a{
     color: white;
@@ -101,8 +90,14 @@ nav a{
 }
 
 #redcircle:hover{
-    background-color: rgb(255, 112, 129,0.6);
+    background-color: rgb(255, 110, 130,0.6);
     transition: 0.2s;
+}
+
+#btn-fechar{
+    display: inline-block;
+    margin: 12px 10px 12px 32px;
+    padding: 0 !important;
 }
 
 nav ul li a i{
@@ -134,9 +129,34 @@ nav ul li ul li a:hover{
 nav p{
     color: white;
     margin: 0;
+    font-size: 12px;
     position: absolute;
     bottom: 16px;
     right: 20px;
+}
+
+#title{
+    font-size: 22px;
+    margin-top: 54px;
+    padding: 12px 10px 12px 10px;
+}
+
+#nav2 a{
+    color: white;
+    background: var(--cor-2);
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+}
+
+#nav2 a:hover{
+    background: rgb(50, 71, 164);
+    transition: 0.3s;
+}
+
+main p{
+    text-align: justify;
 }
 
 #backscreen{
@@ -144,16 +164,6 @@ nav p{
     height: 100%;
     z-index: 2;
     position: absolute;
-}
-
-#mainnomap{
-    color: rgb(35, 35, 35);
-    padding: 50px 30px;
-}
-
-#mapaimg{
-    max-width: 100%;
-    max-height: 100%;
 }
 
 @media screen and (min-width:481px) {

@@ -5,13 +5,13 @@ function abrirNav(){
 
 function fecharNav(){
     document.getElementById('nav').style.width = '0';
+    document.getElementById('nav2').style.width = '0';
     document.getElementById('backscreen').style.width = '0';
 }
 
 function abrirNav2(continente) {
     abrirNav();
 
-    var main = document.getElementById('main');
     lista = continente.getAttribute('data-lists-names').split(',');
     links = continente.getAttribute('data-lists-links').split(',');
     all = '';
@@ -24,7 +24,6 @@ function abrirNav2(continente) {
     document.getElementById('nav2').style.width = '18vw';
     document.getElementById('conflictlist').style.height = '170px';
     document.getElementById('pointconflictlist').style.transform = 'rotate(90deg)';
-    main.style.paddingRight = '18vw';
 }
 
 function abrirCList() {
